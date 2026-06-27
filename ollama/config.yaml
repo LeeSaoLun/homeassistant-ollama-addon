@@ -30,8 +30,10 @@ options:
   OLLAMA_NUM_PARALLEL: 1
   OLLAMA_ORIGINS: ""
   gpus: all
+  OLLAMA_NUM_BATCH: 512
 schema:
   OLLAMA_CONTEXT_LENGTH: int?
+  OLLAMA_NUM_BATCH: int?
   OLLAMA_FLASH_ATTENTION: int
   OLLAMA_MODELS: list(/config/ollama|/share/ollama|/data/ollama)
   OLLAMA_KEEP_ALIVE: int
